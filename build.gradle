@@ -86,8 +86,6 @@ mixin {
     add sourceSets.main, "endlessrise.refmap.json"
     config "endlessrise.mixins.json"
 
-//    addManualRefmap("src/main/resources/manual_refmap.json")
-
     debug = true
     debug.verbose = true
     debug.countInjections = true
@@ -122,7 +120,7 @@ shadowJar {
     ]
 
     shadowPackages.forEach {
-        relocate(it, "tcrepack.$it")
+        relocate(it, "endless_repack.$it")
     }
 
     mergeServiceFiles()
@@ -136,7 +134,7 @@ reobf {
 }
 
 jar {
-    archiveClassifier.set("")
+    archiveClassifier.set("dev")
     from sourceSets.main.output
     exclude '**/module-info.class'
 
@@ -155,6 +153,13 @@ jar {
     }
 
     finalizedBy('reobfJar')
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs = Arrays.asList("-Xjvm-default=all", "-Xopt-in=kotlin.RequiresOptIn")
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
