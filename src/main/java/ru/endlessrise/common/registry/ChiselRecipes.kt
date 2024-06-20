@@ -7,6 +7,12 @@ import ru.endlessrise.common.recipes.ChiselRecipe
 
 object ChiselRecipes {
     val RECIPES = arrayListOf(
-        ChiselRecipe(Blocks.GOLD_BLOCK, ItemStack(Items.DIAMOND_BLOCK), Items.DIAMOND_SWORD, 10)
+        ChiselRecipe(
+            Blocks.GOLD_BLOCK,
+            ItemStack(Items.DIAMOND_BLOCK),
+            ItemStack(Items.STICK, 5),
+            10,
+            offhandItem = ItemStack(Items.FLINT, 2)
+        )
     )
 }
