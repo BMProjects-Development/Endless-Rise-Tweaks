@@ -35,6 +35,10 @@ class ChiselSaveData : WorldSavedData("chisel_save_data") {
         })
         return tag
     }
+
+    override fun isDirty(): Boolean {
+        return true
+    }
 }
 
 class ProgressData(var breakCount: Int = 0)
