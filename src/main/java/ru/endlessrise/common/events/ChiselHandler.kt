@@ -34,6 +34,8 @@ object ChiselHandler {
             .filter { it.input == state.block }
             .filter { it.rightClickItem == handItemStack.item }
             .forEach { recipe ->
+                if(player.cooldowns.isOnCooldown(recipe.rightClickItem)) return@forEach
+
                 event.isCanceled = true // Отключаем действие самого блока при нажатии
 
                 val progress = progressData.computeIfAbsent(event.pos) { ProgressData() }
@@ -58,10 +60,12 @@ object ChiselHandler {
                     )
                 }
 
+                player.cooldowns.addCooldown(handItemStack.item, 10)
+
                 level.sendParticles(ParticleTypes.POOF, x + 0.5f, y + 0.5f, z + 0.5f, 3, 0.01, 0.01, 0.01, 0.0)
 
                 if (handItemStack.isDamageableItem) {
-                    handItemStack.damageValue += recipe.damageToItem
+                    handItemStack.hurtAndBreak(recipe.damageToItem, player) {}
                 }
 
                 if (progress.breakCount++ > recipe.progress) {
