@@ -14,6 +14,6 @@ class EndlessRiseMain {
     init {
         LOGGER.info("Loading EndlessRise Mod!")
 
-        MinecraftForge.EVENT_BUS.addListener(ChiselHandler::onBlockRightClicked)
+        MinecraftForge.EVENT_BUS.register(ChiselHandler)
     }
 }
