@@ -4,6 +4,7 @@ import net.minecraftforge.common.MinecraftForge
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import ru.endlessrise.common.events.ChiselHandler
+import ru.endlessrise.common.init.ModItems
 
 class EndlessRiseMain {
     companion object {
@@ -15,5 +16,6 @@ class EndlessRiseMain {
         LOGGER.info("Loading EndlessRise Mod!")
 
         MinecraftForge.EVENT_BUS.register(ChiselHandler)
+        MinecraftForge.EVENT_BUS.register(ModItems)
     }
 }

@@ -13,6 +13,14 @@ object ChiselRecipes {
             ItemStack(Items.STICK, 5),
             10,
             offhandItem = ItemStack(Items.FLINT, 2)
+        ),
+
+        ChiselRecipe(
+            Blocks.SAND,
+            ItemStack(Items.SANDSTONE),
+            ItemStack(Items.FLINT, 3),
+            8,
+            offhandItem = ItemStack(Items.STICK, 2)
         )
     )
 }
