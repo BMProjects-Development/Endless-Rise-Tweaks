@@ -1,19 +1,27 @@
 name: build
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     strategy:
       matrix:
-        # Use these Java versions
-        java: [17] # Current Java LTS & minimum supported by Minecraft
+        java: [8]
         os: [ubuntu-20.04]
     runs-on: ${{ matrix.os }}
+    if: |
+      !contains(github.event.head_commit.message, '[no ci]')
     steps:
       - name: checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+      - name: Get the mod version from gradle.properties
+        id: get_version
+        run: |
+          MOD_VERSION=$(grep '^mod_version=' gradle.properties | cut -d'=' -f2)
+          echo "MOD_VERSION=$MOD_VERSION" >> $GITHUB_ENV
       - name: validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: setup jdk ${{ matrix.java }}
@@ -22,19 +30,27 @@ jobs:
           java-version: ${{ matrix.java }}
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
-      - name: build
-        run: ./gradlew build
+      - name: Release to GitHub
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: build
       - name: capture build artifacts
-        uses: actions/upload-artifact@v2
+        if: ${{ runner.os == 'Linux' && matrix.java == '17' }}
+        uses: actions/upload-artifact@v4
         with:
           name: Artifacts
-          path: build/libs/
-      - name: authomatic upload
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest-1.16.5"
-          prerelease: false
-          title: "[AUTOMATIC BUILD 1.16.5]"
-          files: |
+          path: |
             build/libs/*.jar
+            !build/libs/*-dev.jar
+            !build/libs/*-sources.jar
+      - name: Create Release
+        id: create_release
+        uses: ncipollo/release-action@v1
+        with:
+          name: "[Endless Rise Mod 1.16.5 | Latest Release]"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: "latest-1.20.1"
+          removeArtifacts: true
+          allowUpdates: true
+          artifacts: "build/libs/*.jar"
+          artifactContentType: application/java-archive
