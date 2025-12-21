@@ -47,7 +47,7 @@ jobs:
         id: create_release
         uses: ncipollo/release-action@v1
         with:
-          name: "[Endless Rise Mod 1.16.5 | Latest Release]"
+          name: "[Endless Rise Tweaks 1.16.5 | Latest Release]"
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: "latest-1.20.1"
           removeArtifacts: true
