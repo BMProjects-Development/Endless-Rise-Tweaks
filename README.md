@@ -1,1 +1,1 @@
-# Endless-Rise-Mod
+# Endless-Rise-Tweaks
