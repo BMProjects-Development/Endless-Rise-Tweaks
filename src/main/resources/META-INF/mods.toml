@@ -53,3 +53,15 @@ description='''${mod_description}'''
    versionRange="${minecraft_version_range}"
    ordering="NONE"
    side="BOTH"
+[[dependencies."${mod_id}"]]
+   modId = "atum"
+   mandatory = true
+   versionRange = "[1.16.5-2.2,)"
+   ordering = "AFTER"
+   side = "BOTH"
+[[dependencies."${mod_id}"]]
+modId = "curios"
+mandatory = true
+versionRange = "[1.16.5-4.1.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
