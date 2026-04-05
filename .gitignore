@@ -3,3 +3,8 @@
 build
 run
 .kotlin
+*.jar
+.gradle-home
+.gradle-user
+.codex-tmp
+tmp
