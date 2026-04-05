@@ -1,6 +1,9 @@
 {
   "package": "ru.endlessrise.mixins",
-  "mixins": [],
+  "mixins": [
+    "BlockHarvestAccessor",
+    "QuernBlockMixin"
+  ],
   "client": [
 
   ]
