@@ -60,26 +60,14 @@ description='''${mod_description}'''
    ordering = "AFTER"
    side = "BOTH"
 [[dependencies."${mod_id}"]]
+modId = "immersiveengineering"
+mandatory = true
+versionRange = "[1.16.5-5.1.0-148,)"
+ordering = "AFTER"
+side = "BOTH"
+[[dependencies."${mod_id}"]]
 modId = "curios"
 mandatory = true
 versionRange = "[1.16.5-4.1.0.0,)"
-ordering = "AFTER"
-side = "BOTH"
-[[dependencies."${mod_id}"]]
-modId = "sereneseasons"
-mandatory = true
-versionRange = "[1.16.5-4.0.1.130,)"
-ordering = "AFTER"
-side = "BOTH"
-[[dependencies."${mod_id}"]]
-modId = "seasonhud"
-mandatory = true
-versionRange = "[1.16.5-2.0,)"
-ordering = "AFTER"
-side = "BOTH"
-[[dependencies."${mod_id}"]]
-modId = "journeymap"
-mandatory = true
-versionRange = "[1.16.5-5.8,)"
 ordering = "AFTER"
 side = "BOTH"

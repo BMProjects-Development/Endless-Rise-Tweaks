@@ -80,10 +80,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf("curse.maven:atum-59621:3990329")
+    implementation fg.deobf("curse.maven:immersive-engineering-231951:3809596")
     implementation fg.deobf("curse.maven:curios-309927:4419403")
-    implementation fg.deobf("curse.maven:serene-seasons-291874:4537666")
-    implementation fg.deobf("curse.maven:seasonhud-690971:7845513")
-    implementation fg.deobf("curse.maven:journeymap-32274:5546771")
 
     shade 'org.jetbrains:annotations:23.1.0'
     Closure withoutAnnotations = { exclude group: 'org.jetbrains', module: 'annotations' }
