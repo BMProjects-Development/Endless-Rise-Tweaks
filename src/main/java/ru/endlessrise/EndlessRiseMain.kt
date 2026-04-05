@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import ru.endlessrise.common.events.ChiselHandler
-import ru.endlessrise.common.init.ModBlocks
 import ru.endlessrise.common.init.ModItems
 import ru.endlessrise.common.world.ModOreFeature
 
@@ -22,7 +21,6 @@ class EndlessRiseMain {
         MinecraftForge.EVENT_BUS.register(ChiselHandler)
         val IModBusEvent = FMLJavaModLoadingContext.get().modEventBus
         ModItems.ITEMS.register(IModBusEvent)
-        ModBlocks.BLOCKS.register(IModBusEvent)
     }
 
 }

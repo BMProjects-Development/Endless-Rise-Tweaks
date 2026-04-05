@@ -1,5 +1,7 @@
 {
   "item.endlessrise.endless_rise": "Endless Rise",
-
-  "block.endlessrise.chlorophyte_ore": "Chlorophyte Ore"
+  "item.endlessrise.lamp": "Lamp",
+  "item.endlessrise.lense": "Lens",
+  "item.endlessrise.photocell": "Photocell",
+  "item.endlessrise.wet_paper": "Wet Paper"
 }
