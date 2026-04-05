@@ -23,6 +23,10 @@ public class SeasonHudCalendarMixin {
             return false;
         }
 
+        if (Calendar.findCuriosCalendar(player, calendarItem)) {
+            return true;
+        }
+
         for (ItemStack stack : player.inventory.items) {
             if (stack.getItem() == calendarItem) {
                 return true;
