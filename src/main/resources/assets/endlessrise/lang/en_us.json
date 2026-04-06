@@ -5,5 +5,7 @@
   "item.endlessrise.lamp": "Lamp",
   "item.endlessrise.lens": "Lens",
   "item.endlessrise.photocell": "Photocell",
-  "item.endlessrise.wet_paper": "Wet Paper"
+  "item.endlessrise.wet_paper": "Wet Paper",
+
+  "jei.description.quern_how_to_create": "To craft a Quern, hold 4 Flint Shards in your main hand and 4 Flint Shards in your off-hand, then right-click on a Sandstone block."
 }

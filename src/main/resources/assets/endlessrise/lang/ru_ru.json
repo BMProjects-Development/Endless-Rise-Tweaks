@@ -5,5 +5,7 @@
   "item.endlessrise.lamp": "Лампа",
   "item.endlessrise.lens": "Линза",
   "item.endlessrise.photocell": "Фотоэлемент",
-  "item.endlessrise.wet_paper": "Мокрая бумага"
+  "item.endlessrise.wet_paper": "Мокрая бумага",
+
+  "jei.description.quern_how_to_create": "Для создания ручной мельницы необходимо взять в основную руку и вторую руку по 4 осколка кремния, а после нажимать ПКМ по блоку песчаника."
 }
