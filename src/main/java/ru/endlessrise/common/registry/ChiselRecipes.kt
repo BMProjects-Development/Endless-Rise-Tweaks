@@ -1,5 +1,6 @@
 package ru.endlessrise.common.registry
 
+import com.alcatrazescapee.notreepunching.common.items.ModItems
 import com.teammetallurgy.atum.init.AtumBlocks
 import net.minecraft.block.Blocks
 import net.minecraft.item.ItemStack
@@ -11,9 +12,9 @@ object ChiselRecipes {
         ChiselRecipe(
             Blocks.SANDSTONE,
             ItemStack(AtumBlocks.QUERN),
-            ItemStack(Items.STICK, 4),
+            ItemStack(Items.STRING, 4),
             10,
-            offhandItem = ItemStack(Items.FLINT, 3)
+            offhandItem = ItemStack(Items.STICK, 4)
         )
     )
 }

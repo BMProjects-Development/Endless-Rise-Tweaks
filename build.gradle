@@ -81,6 +81,7 @@ dependencies {
     implementation fg.deobf("curse.maven:atum-59621:3990329")
     implementation fg.deobf("curse.maven:immersive-engineering-231951:3809596")
     implementation fg.deobf("curse.maven:curios-309927:4419403")
+    implementation fg.deobf("curse.maven:no-tree-punching-289043:3590179")
 
     shade 'org.jetbrains:annotations:23.1.0'
     Closure withoutAnnotations = { exclude group: 'org.jetbrains', module: 'annotations' }
