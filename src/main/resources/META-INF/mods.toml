@@ -43,3 +43,7 @@ mandatory = true
 versionRange = "[1.16.5-7.8.0,)"
 ordering = "AFTER"
 side = "BOTH"
+[[dependencies."${mod_id}"]]
+modId = "itemstages"
+mandatory = true
+side = "BOTH"
