@@ -72,6 +72,9 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        url 'https://maven.blamejared.com'
+    }
 
 }
 
@@ -83,6 +86,8 @@ dependencies {
     implementation fg.deobf("curse.maven:curios-309927:4419403")
     implementation fg.deobf("curse.maven:no-tree-punching-289043:3590179")
     implementation fg.deobf("curse.maven:jei-238222:5846870")
+    implementation fg.deobf("net.darkhax.gamestages:GameStages-1.16.5:7.1.2")
+    implementation fg.deobf("net.darkhax.itemstages:ItemStages-Forge-1.16.5:3.0.9")
 
     shade 'org.jetbrains:annotations:23.1.0'
     Closure withoutAnnotations = { exclude group: 'org.jetbrains', module: 'annotations' }
