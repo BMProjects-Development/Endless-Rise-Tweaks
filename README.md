@@ -8,10 +8,12 @@
   <a href="https://discord.gg/9GWKBVw3Ty"><img src="https://img.shields.io/discord/1087416155934834748?style=for-the-badge&label=Discord&logo=discord&logoColor=d9e0ee&labelColor=f1c232&color=bf9000" alt="Discord"></a>
 </p>
 
-# $${\color{yellow}{Endless \space Rise: \space Tweaks}}$$
-Mod for Endless Rise: Remastered that's added some tweaks and improvements in modpack. <br/>
+# Endless Rise: Tweaks
+Mod for Endless Rise: Remastered that's added some tweaks and improvements in modpack.
 
-## $${\color{yellow}{Features}}$$
+</div>
+
+# Features
 - Added new type recipes for craft in the world.
 
 - Added new items in modpack.
@@ -22,13 +24,16 @@ Mod for Endless Rise: Remastered that's added some tweaks and improvements in mo
 
 - Fixed optimizaton ItemStages mod.
 
-# $${\color{yellow}{Trailer}}$$
+<div align="center">
+
+# Trailer
 [YouTube](https://youtu.be/IDgItyj6tPI)
 
-# $${\color{yellow}{Download}}$$
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/endless-rise-tweaks)
+# Download
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/endless-rise-tweaks) <br/>
+[Modrinth](https://modrinth.com/mod/endless-rise-tweaks)
 
-# $${\color{yellow}{Contacts}}$$
+# Contacts
 [Telegram](https://t.me/BMProjects) <br/>
 [Discord](https://discord.gg/9GWKBVw3Ty) <br/>
 [Boosty](https://boosty.to/barmaxx)
