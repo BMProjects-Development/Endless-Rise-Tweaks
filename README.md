@@ -33,9 +33,10 @@ Mod for Endless Rise: Remastered that's added some tweaks and improvements in mo
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/endless-rise-tweaks) <br/>
 [Modrinth](https://modrinth.com/mod/endless-rise-tweaks)
 
-# Contacts
+# Contacts & Supports
 [Telegram](https://t.me/BMProjects) <br/>
 [Discord](https://discord.gg/9GWKBVw3Ty) <br/>
+[Patreon](https://www.patreon.com/c/BMProjectsMinecraft) <br/>
 [Boosty](https://boosty.to/barmaxx)
 
 <img width="400" height="400" alt="icon_for_mod" src="https://github.com/user-attachments/assets/bfd81ba4-56b9-4976-a028-6895804b5e11" />
